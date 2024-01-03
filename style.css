@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #17171A;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    padding: 50px 25px;
+}
+
+.border_wrapper {
+    border: 2px solid #252529;
+    border-radius: 8px;
+    background-color: #202024 !important;
+}
+
+.input_header {
+    background-color: #202024 !important;
+    color: #AFABB6 !important;
+    border: none;
+    width: 327px !important;
+    height: 50px;
+}
+
+::placeholder {
+    color: #AFABB6 !important;
+}
