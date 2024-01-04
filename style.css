@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family:'Space Grotesk', sans-serif;
 }
 
 body {
@@ -30,10 +31,26 @@ h1 {
     background-color: #202024 !important;
     color: #AFABB6 !important;
     border: none;
-    width: 327px !important;
     height: 50px;
 }
 
 ::placeholder {
     color: #AFABB6 !important;
+}
+
+.container_cards {
+    background-color: #1111147e;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 25px !important;
+}
+
+.main_card {
+    background-color: #17171A;
+    color: #fff;
+    padding: 32px 24px;
+    border: 2px solid #E07B67;
+    border-radius: 8px;
 }
