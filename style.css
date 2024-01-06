@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #17171A;
+    background-color: #101013;
 }
 
 h1 {
@@ -74,4 +74,14 @@ h1 {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color:#AFABB6;
+}
+
+@media screen and (min-width: 992px) {
+    .container_header {
+        background-color: #17171A;
+    }
+    .container_title_input, .container_cards {
+        margin: 0 20%;
+    }
+
 }
