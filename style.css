@@ -34,6 +34,10 @@ h1 {
     height: 50px;
 }
 
+.icon_search {
+    cursor: pointer;
+}
+
 ::placeholder {
     color: #AFABB6 !important;
 }
