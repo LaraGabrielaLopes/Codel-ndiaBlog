@@ -11,14 +11,16 @@ icon.forEach(icon => {
 
 function findWord() {
     let searchWord = document.getElementById('content_search').value.toLowerCase();
-    let pageText = document.body.innerHTML.toLowerCase();
+    let textElements = document.body.querySelectorAll('*:not(script):not(style)');
 
-    if (pageText.includes(searchWord)) {
-        let highlightedText = pageText.replace(new RegExp(searchWord, 'g'), '<span style="background-color: #E07B67;">$&</span');
+    textElements.forEach(element => {
+        let elementText = element.innerHTML.toLowerCase();
+        let regex = new RegExp(searchWord, 'g');
 
-        document.body.innerHTML = highlightedText;
-        console.log(searchWord)
-    } else {
-        console.log('Termo não existe')
-    };
-};
+        if(elementText.includes(searchWord)) {
+            element.innerHTML = elementText.replace(regex, match => `<span style="background-color: #E07B67;">${match}</span>`);
+        }
+    });
+    console.log((searchWord));
+   
+}
